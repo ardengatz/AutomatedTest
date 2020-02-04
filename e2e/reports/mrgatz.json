@@ -1,0 +1,169 @@
+[
+  {
+    "description": "    As a User\n    I should be able to access the system with proper credentials",
+    "keyword": "Feature",
+    "name": "Security",
+    "line": 2,
+    "id": "security",
+    "tags": [
+      {
+        "name": "@Security",
+        "line": 1
+      }
+    ],
+    "uri": "src\\feature\\security.feature",
+    "elements": [
+      {
+        "id": "security;login",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login",
+        "tags": [
+          {
+            "name": "@Security",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\step_definition\\security.definitions.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9516000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I log in",
+            "match": {
+              "location": "src\\step_definition\\security.definitions.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be redirected to the dashboard",
+            "match": {
+              "location": "src\\step_definition\\security.definitions.ts:16"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 12169000000,
+              "error_message": "ScriptTimeoutError: script timeout\n  (Session info: chrome=79.0.3945.130)\n  (Driver info: chromedriver=79.0.3945.16 (93fcc21110c10dbbd49bbff8f472335360e31d05-refs/branch-heads/3945@{#262}),platform=Windows NT 6.1.7601 SP1 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\nFrom: Task: Protractor.waitForAngular()\n    at Driver.schedule (C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at ProtractorBrowser.executeAsyncScript_ (C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\built\\browser.js:425:28)\n    at C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\built\\browser.js:456:33\n    at ManagedPromise.invokeCallback_ (C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\HP\\AppData\\Roaming\\nvm\\v10.15.3\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    As a user\n    I should be able to Create, Read, Update, and Delete a Company.",
+    "keyword": "Feature",
+    "name": "Companies",
+    "line": 2,
+    "id": "companies",
+    "tags": [
+      {
+        "name": "@Companies",
+        "line": 1
+      }
+    ],
+    "uri": "src\\feature\\company.feature",
+    "elements": [
+      {
+        "id": "companies;create-a-company",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Create a Company",
+        "tags": [
+          {
+            "name": "@Companies",
+            "line": 1
+          },
+          {
+            "name": "@CreateCompany",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I go to companies",
+            "match": {
+              "location": "src\\step_definition\\companies.definitions.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1442000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I create a company",
+            "match": {
+              "location": "src\\step_definition\\companies.definitions.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the created item details of the company",
+            "match": {
+              "location": "src\\step_definition\\companies.definitions.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
